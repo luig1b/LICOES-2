@@ -1,0 +1,48 @@
+1.  O que são containers e por que eles ajudam no desenvolvimento de aplicações? 
+
+R: Conteiners são pacotes de software que reúnem o código da aplicação e todas as dependêcias dela. 
+Eles funcionam de forma independente do sistema operacional do servidor.
+
+2.  Qual é a diferença entre integração contínua e deploy contínuo?
+
+R:integração continua: automatização da build e os testes a cada alteração no código
+
+ddeploy contínuio: Publica as alteraçãoes validadas automaticamente em produção a escrita até a publicação.
+
+3.  O que é um pipeline de CI/CD? 
+
+R: Um pipeline de CI/CD é um conjunto de etapas automatizadas que o código percorre desde a escrita até a publicação.
+Ele reduz erros manuais e esclarecer a entrega de novas funcionalidades.
+
+4.  Por que os testes automatizados são importantes antes do deploy? 
+
+R: São importantes para a prevenção de bugs e evitam que códigos quebrados cheguem aos usúarios.
+Servem tambem como feedback rápido informando desenvolvedores sobre as falhas em poucos minutos.
+
+5.  O que é monitoramento pós-deploy? 
+
+R: É o acompanhamento continuo da aplicação após a entrada de uma nova versão em produção, verificando se o novo código causou instabilidade ou lentidão.
+
+6.  Qual é a função do Prometheus? 
+
+R: O prometheus é uma ferramenta de monitoramento de código aberto focada em coleta de dados, armazena dados numéricos temporais enviados por aplicação e servidores.
+
+7.  Qual é a função do Grafana? 
+
+R: O grafana é uma plataforma  de análise e visualização de dados, transforma metricas brutas(como as do prometheus) em graficos interativos.
+
+8.  Cite três métricas importantes para monitorar uma aplicação. 
+
+R: Taxa de erro, tempo de resposta, uso de CPU e Memória.
+
+9.  Cite dois exemplos de alertas que poderiam ser configurados em uma aplicação. 
+
+R: Alerta de inatividade: Notificar a equipe se a taxa de erros Http 500 passar dee 5% em 2 minutos.
+
+  Alerta de sobrecarga: Notificar a equipe se o uso de memoria ram do servidor  ultrapassar 90% por mais de 5 minutos 
+
+10.  Explique por que a visualização em tempo real ajuda a equipe a tomar decisões mais rapidamente. 
+
+R: visualização em tempo real condensa milhares de dados complexos em graficos intuitivos.
+
+diagnóstico Rápido: mostra instataneamente a raiz do problema (Ex: pico de acesso ou falha no banco de dados).

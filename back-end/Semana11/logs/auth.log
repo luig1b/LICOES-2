@@ -1,0 +1,28 @@
+{"level":"info","message":{"ip":"::1","metodo":"DELETE","rota":"/","servico":"Auth Service"},"timestamp":"2026-06-10T17:49:54.083Z"}
+{"level":"info","message":{"ip":"::1","metodo":"DELETE","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-10T18:03:56.977Z"}
+{"level":"info","message":{"ip":"::1","metodo":"DELETE","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-10T18:04:13.997Z"}
+{"level":"info","message":{"ip":"::1","metodo":"DELETE","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-10T18:04:15.437Z"}
+{"level":"info","message":{"ip":"::1","metodo":"DELETE","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-10T18:04:16.279Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-10T18:04:28.249Z"}
+{"level":"warn","message":{"mensagem":"Tentativa de login inválida"},"timestamp":"2026-06-10T18:04:28.253Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:42:01.853Z"}
+{"level":"warn","message":{"mensagem":"Tentativa de login inválida"},"timestamp":"2026-06-11T17:42:01.858Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:42:09.059Z"}
+{"level":"warn","message":{"mensagem":"Tentativa de login inválida"},"timestamp":"2026-06-11T17:42:09.060Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:44:45.995Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:45:01.830Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:50:43.970Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:51:58.196Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:54:09.135Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:54:38.166Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:54:47.401Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T17:55:08.398Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/","servico":"Auth Service"},"timestamp":"2026-06-11T17:55:14.705Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:55:26.766Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:55:28.104Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/Login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:55:38.413Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/Login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:56:25.926Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/Login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:56:36.303Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/Login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:56:45.955Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/Login%20","servico":"Auth Service"},"timestamp":"2026-06-11T17:57:21.123Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-06-11T18:08:52.158Z"}

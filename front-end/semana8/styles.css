@@ -1,0 +1,61 @@
+:root{
+    --primary: #3498db;
+    --secondary: #210f67;
+    --terciary: #7258e700;
+    --quartenary: #808080;
+    --front-base: 16px;
+    --font-lg: 20px;
+    --space: 10px;
+}
+
+
+*{
+    background-color: rgb(90, 90, 210);
+    text-align: center;
+    color: #f0f8ff;
+    outline-color: rgb(169, 186, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgb(42, 81, 209);
+    border: none;
+    padding: var(--space);
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius: 67psx;
+}        
+
+.button:hover {
+    background-color: var(--secundary);
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        justify-content: space-around;
+    }
+ 
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ 
+.card-title{
+    background-color: var(--terciary);
+}
+.card-description{
+    background-color: var(--terciary);
+}
+ 
+/* Media Queries para desktops */
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+ 
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

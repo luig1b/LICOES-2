@@ -1,0 +1,33 @@
+{ 
+
+  "name": "microservicos-seguros", 
+
+  "version": "1.0.0", 
+
+  "description": "Atividade de microsserviços com HTTPS, JWT, roles e logs", 
+
+  "main": "index.js", 
+
+  "scripts": { 
+
+    "auth": "node auth-service.js", 
+
+    "usuarios": "node usuarios-service.js", 
+
+    "pedidos": "node pedidos-service.js" 
+
+  }, 
+
+  "dependencies": { 
+
+    "cors": "^2.8.5", 
+
+    "express": "^5.1.0", 
+
+    "jsonwebtoken": "^9.0.2", 
+
+    "winston": "^3.17.0" 
+
+  } 
+
+} 
