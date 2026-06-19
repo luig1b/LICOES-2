@@ -1,0 +1,19 @@
+1 - O que é uma pipeline em um processo de desenvolvimento de software?
+
+R: o pipliné uma sequência de etapas automáticas para validar, testar, construir e entregar um software, garantindo que o sistema funcione de forma correta antes de ser entregue ao usúario.
+
+2 - Qual é a diferença entre polling e webhook?
+
+R:O polling verifica repetidamente se houve uma atualização dentro do sistema, já o webhook envia uma notificação assim que o evento acontece, tendo uma comunicação mais rapida.
+
+3 - Quais são as três partes principais de um webhook?
+
+R: são os eventos: oque dispara a ação, o endpoint: que recebe os dados, payload: que contem as informações enviadas na imagem.
+
+4 - Por que é importante usar um secret e uma assinatura HMAC em webhooks?
+
+R: Ambas ajudam a garantir a segurança da comunicação, já que com o secret e o HMAC é possivel verificar se a mensagem veio de uma fonte cofiável e se não foi alterada durante o envio.
+
+5 - Por que uma mensagem como “ERRO! Build quebrado” é menos útil do que uma mensagem que informa serviço, autor, commit e link dos logs?
+
+R: Porque ela não  fornece informações suficientes para indentificar a causa do problema. uma mensagem detalhada ajuda a equipe a localizar  o erro mais rapidamente e tomar as ações  necessárias para corrigi-lo.
