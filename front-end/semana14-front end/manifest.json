@@ -1,0 +1,17 @@
+{ 
+
+  "name": "Minha PWA de Estudos", 
+
+  "short_name": "PWA Estudos", 
+
+  "start_url": "./index.html", 
+
+  "display": "standalone", 
+
+  "background_color": "#ffffff", 
+
+  "theme_color": "#0d6efd", 
+
+  "icons": [] 
+
+} 
