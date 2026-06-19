@@ -1,0 +1,339 @@
+<!DOCTYPE html> 
+
+<html lang="pt-BR"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>TaskFlow acessível</title> 
+
+  <style> 
+
+    body { 
+
+      font-family: Arial, sans-serif; 
+
+      background-color: #1c1528; 
+
+      color: #222222; 
+
+      padding: 20px; 
+
+      
+    } 
+
+    h1 {
+        color: rgb(255, 255, 255); /* Nome da cor */
+      }
+      
+      p {
+        color: #ffffff; /* Código Hexadecimal */
+      }
+      
+      span {
+        color: rgb(255, 255, 255); /* Valor RGB */
+      }
+
+      h3 {
+        color: rgb(255, 255, 255); /* Nome da cor */
+      }
+      
+      p {
+        color: #ffffff; /* Código Hexadecimal */
+      }
+      
+      span {
+        color: rgb(255, 255, 255); /* Valor RGB */
+      }
+
+
+    main { 
+
+      background-color: #261c37; 
+
+      padding: 20px; 
+
+      max-width: 600px; 
+
+      margin: auto; 
+
+      border: 1px solid #dddddd; 
+
+      border-radius: 8px; 
+
+    } 
+
+  
+
+    label { 
+
+      display: block; 
+
+      margin-top: 15px; 
+
+      font-weight: bold; 
+    
+      color: #ffffff;
+    } 
+
+  
+
+    input { 
+
+      padding: 10px; 
+
+      width: 100%; 
+
+      box-sizing: border-box; 
+
+      margin-top: 5px; 
+
+    } 
+
+  
+
+    button { 
+
+      background-color: #005fcc; 
+
+      color: white; 
+
+      padding: 10px 14px; 
+
+      border: none; 
+
+      border-radius: 6px; 
+
+      margin-top: 10px; 
+
+      cursor: pointer; 
+
+    } 
+
+  
+
+    button:focus, 
+
+    input:focus { 
+
+      outline: 3px solid #ffbf47; 
+
+    } 
+
+    section{
+        color: #ffffff;                
+    }
+
+    #feedback { 
+
+      margin-top: 10px; 
+
+      font-weight: bold; 
+
+      color: #ffffff; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+  <main> 
+
+    <section> 
+
+      <h1 id="titulo">TaskFlow</h1> 
+
+      <p id="descricao">Sistema para organizar tarefas.</p> 
+
+  
+
+      <label id="labelTarefa" for="tarefa">Digite uma tarefa:</label> 
+
+      <input id="tarefa" type="text"> 
+
+      <button id="botaoAdicionar" type="button" onclick="adicionarTarefa()"> 
+
+        Adicionar tarefa 
+
+      </button> 
+
+  
+
+      <div id="feedback" aria-live="polite"></div> 
+
+      <ul id="lista" aria-label="Lista de tarefas cadastradas"></ul> 
+
+  
+
+      <p id="dataAtual"></p> 
+
+      <p id="precoExemplo"></p> 
+
+  
+
+      <button type="button" onclick="trocarIdioma('pt-BR')">Português</button> 
+
+      <button type="button" onclick="trocarIdioma('en-US')">English</button> 
+
+    </section> 
+
+  </main> 
+
+  
+
+  <script> 
+
+    let idiomaAtual = 'pt-BR'; 
+
+  
+
+    const textos = { 
+
+      'pt-BR': { 
+
+        titulo: 'TaskFlow', 
+
+        descricao: 'Sistema para organizar tarefas.', 
+
+        labelTarefa: 'Digite uma tarefa:', 
+
+        botaoAdicionar: 'Adicionar tarefa', 
+
+        feedback: 'Tarefa adicionada com sucesso!', 
+
+        data: 'Data atual', 
+
+        preco: 'Preço do plano' 
+
+      }, 
+
+      'en-US': { 
+
+        titulo: 'TaskFlow', 
+
+        descricao: 'System to organize tasks.', 
+
+        labelTarefa: 'Type a task:', 
+
+        botaoAdicionar: 'Add task', 
+
+        feedback: 'Task added successfully!', 
+
+        data: 'Current date', 
+
+        preco: 'Plan price' 
+
+      } 
+
+    }; 
+
+  
+
+    function atualizarFormatos() { 
+
+      const data = new Date(); 
+
+      const preco = 29.9; 
+
+  
+
+      document.getElementById('dataAtual').textContent = 
+
+        textos[idiomaAtual].data + ': ' + 
+
+        new Intl.DateTimeFormat(idiomaAtual).format(data); 
+
+  
+
+      document.getElementById('precoExemplo').textContent = 
+
+        textos[idiomaAtual].preco + ': ' + 
+
+        new Intl.NumberFormat(idiomaAtual, { 
+
+          style: 'currency', 
+
+          currency: idiomaAtual === 'pt-BR' ? 'BRL' : 'USD' 
+
+        }).format(preco); 
+
+    } 
+
+  
+
+    function trocarIdioma(idioma) { 
+
+      idiomaAtual = idioma; 
+
+      document.documentElement.lang = idioma; 
+
+  
+
+      document.getElementById('titulo').textContent = textos[idioma].titulo; 
+
+      document.getElementById('descricao').textContent = textos[idioma].descricao; 
+
+      document.getElementById('labelTarefa').textContent = textos[idioma].labelTarefa; 
+
+      document.getElementById('botaoAdicionar').textContent = textos[idioma].botaoAdicionar; 
+
+  
+
+      atualizarFormatos(); 
+
+    } 
+
+  
+
+    function adicionarTarefa() { 
+
+      const campo = document.getElementById('tarefa'); 
+
+      const lista = document.getElementById('lista'); 
+
+      const feedback = document.getElementById('feedback'); 
+
+  
+
+      if (campo.value.trim() === '') { 
+
+        return; 
+
+      } 
+
+  
+
+      const item = document.createElement('li'); 
+
+      item.textContent = campo.value; 
+
+      lista.appendChild(item); 
+
+  
+
+      feedback.textContent = textos[idiomaAtual].feedback; 
+
+      campo.value = ''; 
+
+      campo.focus(); 
+
+    } 
+
+  
+
+    document.getElementById('tarefa').addEventListener('keydown', function(event) { 
+
+      if (event.key === 'Enter') { 
+        adicionarTarefa(); 
+      } 
+    }); 
+    atualizarFormatos(); 
+  </script> 
+</body> 
+</html> 
